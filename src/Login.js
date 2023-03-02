@@ -1,5 +1,7 @@
 import GoogleLogin from 'react-google-login';
 import Swal from 'sweetalert2';
+import { useState, useEffect } from 'react';
+import { gapi } from "gapi-script";
 
 function Login() {
 

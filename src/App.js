@@ -11,7 +11,10 @@ import image1 from './marlenne.jpg';
 import Maps from './GoogleMaps';
 import Inicio from './Inicio';
 import Cartas from './Cartas';
-
+import Mockup from './Mockup';
+import Login from './Login';
+import LoginCerrar from './LoginCerrar';
+import Examen from './Examen';
 
 
 function App() {
@@ -20,18 +23,30 @@ function App() {
       <center>
       <div className="container mt-5">    
         <div className="btn-group">
-         <Link to="./Inicio" className="btn btn-danger">
+         <Link to="./Inicio" className="btn btn-light">
           INICIO
           </Link>
-          <Link to="/Curriculum" className="btn btn-light">
+          <Link to="/Curriculum" className="btn btn-danger">
           CURRICULUM
          </Link>
-         <Link to="/Mapa" className="btn btn-danger">
+         <Link to="/Mapa" className="btn btn-light">
           MAPA
+         </Link>
+         <Link to="/Mockup" className="btn btn-danger">
+         MOCKUP
          </Link>  
          <Link to="/Carrusel" className="btn btn-light">
           CARRUSEL
-         </Link>       
+         </Link> 
+         <Link to="/Login" className="btn btn-danger">
+          LOGIN
+         </Link> 
+         <Link to="/LoginCerrar" className="btn btn-light">
+          CERRAR
+         </Link> 
+         <Link to="/Examen" className="btn btn-danger">
+          EXAMEN
+         </Link>        
         </div>
         </div>
         </center>
@@ -84,6 +99,30 @@ function App() {
           <center> 
             <h1>Mi Casa</h1>
             <Maps />
+            </center>
+        </Route>
+        <Route path="/Mockup">
+          <center> 
+            <h1>Mockup</h1>
+            <Mockup />
+            </center>
+        </Route>
+        <Route path="/Login">
+          <center> 
+            <h1>Login</h1>
+            <Login />
+            </center>
+        </Route>
+        <Route path="/LoginCerrar">
+          <center> 
+            <h1>Cerrar</h1>
+            <LoginCerrar />
+            </center>
+        </Route>
+        <Route path="/Examen">
+          <center> 
+            <h1>Examen</h1>
+            <Examen />
             </center>
         </Route>
         <Route path="/">

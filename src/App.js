@@ -15,6 +15,7 @@ import Mockup from './Mockup';
 import Login from './Login';
 import LoginCerrar from './LoginCerrar';
 import Examen from './Examen';
+import Login_face from './Login_face';
 
 
 function App() {
@@ -46,7 +47,10 @@ function App() {
          </Link> 
          <Link to="/Examen" className="btn btn-danger">
           EXAMEN
-         </Link>        
+         </Link>   
+         <Link to="/Login_face" className="btn btn-light">
+          FACEBOOK
+         </Link>  
         </div>
         </div>
         </center>
@@ -109,8 +113,9 @@ function App() {
         </Route>
         <Route path="/Login">
           <center> 
-            <h1>Login</h1>
+          <h1>CREDENCIALES DEL USUARIO</h1>
             <Login />
+            <Login_face />
             </center>
         </Route>
         <Route path="/LoginCerrar">
@@ -123,6 +128,12 @@ function App() {
           <center> 
             <h1>Examen</h1>
             <Examen />
+            </center>
+        </Route>
+        <Route path="/Login_face">
+          <center> 
+            <h1>Login</h1>
+            <Login_face />
             </center>
         </Route>
         <Route path="/">

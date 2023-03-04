@@ -89,10 +89,7 @@ function Examen() {
       
   
    return(
-    <Row>
-            <Col>
-            <Col>
-            <Col>
+ 
             <div>
             <Form>
       <Form.Group className="mt-8 mb-8" controlId="formBasicEmail">
@@ -137,11 +134,6 @@ function Examen() {
                 />
             )}
         </div>
-            </Col>
-            </Col>
-            </Col>
-        </Row>
-
   
    
    )   

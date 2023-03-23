@@ -1,11 +1,8 @@
 import logo from './logo.svg';
 import { BrowserRouter as Router,Switch,Route,Link } from 'react-router-dom';
 import './App.css';
-import { Map } from 'google-maps-react';
 import Curriculum from './Curriculum';
-import GoogleMaps, { MapContainer } from './GoogleMaps';
 import image from './UTD.jpg';
-import component from './Curriculum'
 import Carrusel from './Carrusel'
 import image1 from './marlenne.jpg';
 import Maps from './GoogleMaps';
@@ -14,9 +11,6 @@ import Cartas from './Cartas';
 import Mockup from './Mockup';
 import Login from './Login';
 import LoginCerrar from './LoginCerrar';
-import Examen from './Examen';
-import Login_face from './Login_face';
-
 
 function App() {
   return (
@@ -45,12 +39,6 @@ function App() {
          <Link to="/LoginCerrar" className="btn btn-light">
           CERRAR
          </Link> 
-         <Link to="/Examen" className="btn btn-danger">
-          EXAMEN
-         </Link>   
-         <Link to="/Login_face" className="btn btn-light">
-          FACEBOOK
-         </Link>  
         </div>
         </div>
         </center>
@@ -114,26 +102,13 @@ function App() {
         <Route path="/Login">
           <center> 
           <h1>CREDENCIALES DEL USUARIO</h1>
-            <Login />
-            <Login_face />
+          <Login />
             </center>
         </Route>
         <Route path="/LoginCerrar">
           <center> 
             <h1>Cerrar</h1>
             <LoginCerrar />
-            </center>
-        </Route>
-        <Route path="/Examen">
-          <center> 
-            <h1>Examen</h1>
-            <Examen />
-            </center>
-        </Route>
-        <Route path="/Login_face">
-          <center> 
-            <h1>Login</h1>
-            <Login_face />
             </center>
         </Route>
         <Route path="/">

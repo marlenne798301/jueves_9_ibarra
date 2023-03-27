@@ -8,6 +8,8 @@ const Cartas = (props) => {
         <p className="card-text">{props.description}</p>
       </div>
     </div>
+ 
+
   );
 }
 

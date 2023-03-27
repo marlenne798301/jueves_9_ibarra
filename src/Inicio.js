@@ -24,9 +24,15 @@ const Inicio = () => {
             description="Este método es obligatorio en cualquier componente, pues como su nombre lo dice, se utiliza para obtener los elementos finales a visualizar o pintar en el navegador. Debe ser una función pura, es decir, no debe modificar las props, no debe modificar el state ni realizar operaciones del DOM."
             
           />
+         
+         
         </div>
       </div>
+      <br></br>
+      <a href='https://github.com/marlenne798301/jueves_9_ibarra.git'>
+      <button className='btn btn-danger'>VER MI REPOSITORIO</button></a>
     </div>
+    
   );
 }
 
